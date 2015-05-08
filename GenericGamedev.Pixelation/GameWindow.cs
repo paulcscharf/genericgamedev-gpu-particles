@@ -1,7 +1,6 @@
 ﻿using System;
 using amulware.Graphics;
 using amulware.Graphics.ShaderManagement;
-using Bearded.Utilities;
 using Bearded.Utilities.Collections;
 using Bearded.Utilities.Input;
 using Bearded.Utilities.Math;
@@ -90,7 +89,7 @@ namespace GenericGamedev.Pixelation
             {
                 if (InputManager.IsKeyPressed(Key.S))
                 {
-                    this.particleTime += e.ElapsedTimeInSf * 0.2f;
+                    this.particleTime += e.ElapsedTimeInSf * 0.4f;
                 }
                 else
                 {
@@ -123,7 +122,7 @@ namespace GenericGamedev.Pixelation
                 this.createProjectionMatrix(this.glWidth, this.glHeight);
             }
 
-            GL.ClearColor(Color.Purple);
+            GL.ClearColor(Color.Silver);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
             GL.CullFace(CullFaceMode.FrontAndBack);
             SurfaceBlendSetting.PremultipliedAlpha.Set(null);
