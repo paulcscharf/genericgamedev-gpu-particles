@@ -10,6 +10,7 @@ out vec4 fragColor;
 
 void main()
 {
+	// colour the vertex with a simple procedural circular texture
 	float d = dot(fragment.uv, fragment.uv);
 
 	if(d > 1)
