@@ -45,10 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlmostGPUParticles.cs" />
+    <Compile Include="AlmostGPUVertex.cs" />
+    <Compile Include="CPUGeoVertex.cs" />
+    <Compile Include="CPUStructDirectVertexWritePointParticles.cs" />
+    <Compile Include="CPUStructDirectVertexWriteParticles.cs" />
+    <Compile Include="CPUStructParticles.cs" />
+    <Compile Include="CPUParametricParticles.cs" />
+    <Compile Include="CPUQuadVertex.cs" />
+    <Compile Include="CPUSimpleParticles.cs" />
     <Compile Include="GameWindow.cs" />
-    <Compile Include="ParticleSystem.cs" />
-    <Compile Include="ParticleVertex.cs" />
+    <Compile Include="GPUVertex.cs" />
+    <Compile Include="IParticleSystem.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="GPUParticles.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\libs\awgraphics\libs\utilities\src\Bearded.Utilities.csproj">
@@ -67,10 +77,19 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\particle.gs">
+    <None Include="shaders\almost-gpu-particle.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="shaders\particle.vs">
+    <None Include="shaders\cpu-particle.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="shaders\quad-particle.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="shaders\gpu-particle.gs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="shaders\gpu-particle.vs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

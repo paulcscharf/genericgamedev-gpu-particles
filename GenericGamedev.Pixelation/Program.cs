@@ -5,7 +5,7 @@ namespace GenericGamedev.Pixelation
     {
         static void Main(string[] args)
         {
-            new GameWindow().Run(60);
+            new GameWindow().Run(0);
         }
     }
 }
